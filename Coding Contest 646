@@ -1,0 +1,43 @@
+Question 1
+
+
+
+
+num=int(input())
+
+for i in range (num):
+    #print(i)
+    temp=input().split(" ")
+    l=int(temp[0])
+    n=int(temp[1])
+    #print(temp)
+    arr=input().split(" ")
+    #print(arr)
+    odd=0
+    even=0
+    for j in arr:
+        t=int(j)
+        #print(t)
+        if(t%2==0):
+            #print("EVEN")
+            even=even+1
+        else:
+            #print("ODD")
+            odd=odd+1
+    if (n==l):
+        if(odd%2==0):
+            print("No")
+        else:
+            print("Yes")
+    else:
+        if (odd==0):
+            print("No")
+        elif(n%2==0):
+            if(even==0):
+                print("No")
+            else:
+                print("Yes")
+        else:
+            print("Yes")
+    
+
